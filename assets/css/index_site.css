@@ -143,6 +143,11 @@ body {
     position: relative;
     overflow: hidden;
 }
+.map__container {
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
 
 .map__h2 {
     text-align: center;
@@ -154,7 +159,7 @@ body {
 }
 
 .mapp__block {
-    width: 400px;
+    max-width: 400px;
     height: 100px;
     background: linear-gradient(135deg, #333, #444);
     margin: 20px auto;
@@ -196,10 +201,6 @@ body {
     font-size: 1.2rem;
 }
 
-svg {
-    margin-left: 75vh;
-}
-
 svg line {
     stroke: white;
     stroke-width: 2;
@@ -215,14 +216,6 @@ svg line:hover {
 svg polygon {
     fill: white;
     animation: fadeIn 1.5s infinite ease-in-out;
-}
-
-.map__left {
-    margin-left: 30vh;
-}
-
-.map__right {
-    margin-left: 100vh;
 }
 
 
@@ -444,8 +437,15 @@ footer {
         padding: 20px;
         transition: right 0.3s ease-in-out;
         margin-bottom:15px;
+        display: none;
       }
       .nav__links.nav__active {
         right: 0;
+        display: block;
       }
+}
+@media(max-width:375px) {
+    .intro__logo {
+        width:350px;
+    }
 }

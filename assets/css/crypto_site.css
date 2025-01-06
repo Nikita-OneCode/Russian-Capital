@@ -487,9 +487,11 @@ footer {
         padding: 20px;
         transition: right 0.3s ease-in-out;
         margin-bottom:15px;
+        display: none;
       }
       .nav__links.nav__active {
         right: 0;
+        display: block;
       }
 }
 
